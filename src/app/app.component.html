@@ -1,0 +1,25 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <br>
+  <br>
+  <br>
+  <br>
+
+<div class="btn-group btn-group-toggle">
+  <label class="btn-danger" ngbButtonLabel>
+    <input type="checkbox" ngbButton [(ngModel)]="model.google"><i class="fab fa-google"></i> Google
+  </label>
+  <label class="btn-success" ngbButtonLabel>
+    <input type="checkbox" ngbButton [(ngModel)]="model.twitter"><i class="fab fa-twitter"></i> Twitter
+  </label>
+  <label class="btn-primary" ngbButtonLabel>
+    <input type="checkbox" ngbButton [(ngModel)]="model.facebook"><i class="fab fa-facebook-f"></i> Facebook
+  </label>
+</div>
+<hr>
+<pre>{{model | json}}</pre>
+
+<router-outlet></router-outlet>
